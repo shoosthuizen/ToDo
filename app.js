@@ -10,7 +10,10 @@ var methodOverride = require('method-override'); // simulate DELETE and PUT
 
 // configuration
 
-mongoose.connect('mongodb://127.0.0.1/ToDo');
+//mongoose.connect('mongodb://127.0.0.1/ToDo');
+mongoose.connect('mongodb://shoosthuizen:Gibbs001@ds143907.mlab.com:43907/todo');
+//mongodb://<dbuser>:<dbpassword>@ds143907.mlab.com:43907/todo
+
 
 app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev'));
